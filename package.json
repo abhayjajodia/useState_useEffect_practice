@@ -2,7 +2,7 @@
   "name": "dark-mode",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://abhayjajodia.github.io/darkMode_practice",
+  "homepage": "https://abhayjajodia.github.io/useState_useEffect_practice",
   "type": "module",
   "scripts": {
     "dev": "vite",
