@@ -17,24 +17,36 @@ function App() {
     setDarkMode(!darkMode)
   }
   
+  // useEffect(() => {
+  //   let savedMode = localStorage.getItem('darkMode')
+  //   if(!savedMode) {
+  //     savedMode = 'light'
+  //     setDarkMode(false)  
+  //     localStorage.setItem('darkMode', savedMode)
+  //   }
+  //   setDarkMode(savedMode === 'dark' ? true : false)
+  // }
+  // , [])
+
+
   useEffect(() => {
-    let savedMode = localStorage.getItem('darkMode')
-    if(!savedMode) {
-      savedMode = 'light'
-      setDarkMode(false)  
-      localStorage.setItem('darkMode', savedMode)
+    if (darkMode) {
+      document.documentElement.classList.add('dark')
+      
+
+    } else {
+      document.documentElement.classList.remove('dark')
+      
     }
-    setDarkMode(savedMode === 'dark' ? true : false)
-  }
-  , [])
+  }, [darkMode])
   
   return (
 
     <>
-    <div className={`${darkMode ? "dark" : ""}`}>
+    <div className={`${darkMode ? 'dark' : ''}`}  >
 
-      <div className="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl">
-        <h1 className="text dark:text-white font-medium tracking-tight">
+      <div className="container mx-auto mt-10  dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl">
+        <h1 className="text  dark:text-white font-medium tracking-tight">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
      
         </h1>
@@ -54,14 +66,114 @@ function App() {
       dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-green-600"></div>
     </label>
     </div>
+      <div className={`${darkMode ? 'dark' : ''}`}  >
+
+      <div className="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl">
+        <h1 className="text dark:text-white font-medium tracking-tight">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     
+        </h1>
+        <p className="text-slate-300 dark:text-slate-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste debitis consequatur aliquam harum placeat 
+          impedit quae iusto, nulla, similique nihil nostrum nam ipsum, 
+          repudiandae optio in error corporis porro?
+        </p>
+      </div>
+      </div>
+      <div className={`${darkMode ? 'dark' : ''}`}  >
+
+      <div className="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl">
+        <h1 className="text dark:text-white font-medium tracking-tight">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     
+        </h1>
+        <p className="text-slate-300 dark:text-slate-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste debitis consequatur aliquam harum placeat 
+          impedit quae iusto, nulla, similique nihil nostrum nam ipsum, 
+          repudiandae optio in error corporis porro?
+        </p>
+      </div>
+      </div>
+      
+      <div className={`${darkMode ? 'dark' : ''}`}  >
+
+      <div className="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl">
+        <h1 className="text dark:text-white font-medium tracking-tight">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     
+        </h1>
+        <p className="text-slate-300 dark:text-slate-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste debitis consequatur aliquam harum placeat 
+          impedit quae iusto, nulla, similique nihil nostrum nam ipsum, 
+          repudiandae optio in error corporis porro?
+        </p>
+      </div>
+      </div>
+      
+      <div className={`${darkMode ? 'dark' : ''}`}  >
+
+      <div className="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl">
+        <h1 className="text dark:text-white font-medium tracking-tight">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     
+        </h1>
+        <p className="text-slate-300 dark:text-slate-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste debitis consequatur aliquam harum placeat 
+          impedit quae iusto, nulla, similique nihil nostrum nam ipsum, 
+          repudiandae optio in error corporis porro?
+        </p>
+      </div>
+      </div>
+      
+      <div className={`${darkMode ? 'dark' : ''}`}  >
+
+      <div className="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl">
+        <h1 className="text dark:text-white font-medium tracking-tight">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     
+        </h1>
+        <p className="text-slate-300 dark:text-slate-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste debitis consequatur aliquam harum placeat 
+          impedit quae iusto, nulla, similique nihil nostrum nam ipsum, 
+          repudiandae optio in error corporis porro?
+        </p>
+      </div>
+      </div>
+      
+      <div className={`${darkMode ? 'dark' : ''}`}  >
+
+      <div className="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl">
+        <h1 className="text dark:text-white font-medium tracking-tight">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     
+        </h1>
+        <p className="text-slate-300 dark:text-slate-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste debitis consequatur aliquam harum placeat 
+          impedit quae iusto, nulla, similique nihil nostrum nam ipsum, 
+          repudiandae optio in error corporis porro?
+        </p>
+      </div>
+      </div>
+      
+      <div className={`${darkMode ? 'dark' : ''}`}  >
+
+      <div className="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl">
+        <h1 className="text dark:text-white font-medium tracking-tight">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     
+        </h1>
+        <p className="text-slate-300 dark:text-slate-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste debitis consequatur aliquam harum placeat 
+          impedit quae iusto, nulla, similique nihil nostrum nam ipsum, 
+          repudiandae optio in error corporis porro?
+        </p>
+      </div>
+      </div>
+      
+      
 
 
-
-    <p>
-      {count}
-    </p>
-    <button className="bg-green-500 rounded-xl m-20 p-2" onClick={handleAdd}>Add</button>
-    <button className="bg-red-500 rounded-xl m-20 p-2" onClick={handleMinus}>Minus</button>
+    
     </>
   )
 }
