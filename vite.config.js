@@ -5,5 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/useState_useEffect_practice/'
+  base: './',
+  build: {
+    assetsDir: './' // Put assets in root
+  }
 })
