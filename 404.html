@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Redirect to index.html while preserving path
+      const repo = 'your-exact-repo-name';
+      const path = window.location.pathname.split('/').slice(2).join('/');
+      window.location.href = `/${repo}/${path ? path : ''}`;
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
